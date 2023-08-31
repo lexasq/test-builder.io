@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BuilderModule } from '@builder.io/angular';
 import { ZephyrComponent } from './zephyr.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AppRoutingModule } from "./app-routing.module"; // <-- import here
+import { AppRoutingModule } from './app-routing.module'; // <-- import here
 
 @NgModule({
   declarations: [AppComponent, ZephyrComponent, PageNotFoundComponent],
