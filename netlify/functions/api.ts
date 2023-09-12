@@ -25,7 +25,7 @@ router.get('*', async (req, res) => {
     );
   }
 });
-app.use('/favicon.ico', express.static('/favicon.ico'));
+app.use('/favicon.ico', express.static('favicon.ico'));
 app.use('/', router);
 
 let handleError = err => {
