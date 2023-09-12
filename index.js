@@ -22,7 +22,7 @@ app.get('*', async (req, res) => {
         );
     }
 });
-app.use('/favicon.ico', express.static('/favicon.ico'));
+app.use('/favicon.ico', express.static(__dirname + '/public/favicon.ico'));
 
 let handleError = err => {
     if (err.response.status === 404) {
