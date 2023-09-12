@@ -48,7 +48,6 @@ let template = ({ body }) => `
       <title>Zephyr Cloud</title>
       <base href="/">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel=”icon” href=”/favicon.ico”>
       <style>
         button:disabled,
         button[disabled]{
