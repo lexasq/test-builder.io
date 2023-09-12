@@ -1,8 +1,9 @@
 // YOUR_BASE_DIRECTORY/netlify/functions/api.ts
-import express, { Router } from 'express';
+import { Router } from 'express';
 import serverless from 'serverless-http';
 
 let axios = require('axios');
+let express = require('express');
 let builderApiKey = 'ea8c8e416fd64171bc2ef9ac5ac226e6';
 const app = express();
 const router = Router();
