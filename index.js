@@ -24,11 +24,6 @@ app.get('*', async (req, res) => {
 });
 app.use('/favicon.ico', express.static(__dirname + '/public/favicon.ico'));
 
-
-app.listen(3000, () => {
-    console.log('Listening on port 3000...');
-});
-
 let handleError = err => {
     if (err.response.status === 404) {
         // Catch 404s - no page was found for this URL, that's fine
@@ -55,7 +50,7 @@ let template = ({ body }) => `
           background-color: #cccccc !important;
           color: #666666 !important;
         }
-        
+
         body {
           overflow: auto;
           margin: 0;
